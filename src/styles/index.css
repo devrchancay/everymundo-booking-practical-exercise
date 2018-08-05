@@ -1,0 +1,178 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply .bg-gray;
+  @apply .text-red;
+}
+
+.ico {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo2x--sprite.png?20180404);
+  @apply .mr-2;
+}
+
+.plane {
+  background-size: 396px 389px;
+  background-position: -199px -275px;
+}
+
+.hotel {
+  background-size: 396px 389px;
+  background-position: -295px -275px;
+}
+
+.car {
+  background-size: 396px 389px;
+  background-position: -299px -199px;
+}
+
+.crown {
+  background-size: 396px 389px;
+  background-position: -299px -199px;
+}
+
+.input {
+  @apply .border;
+  @apply .py-4;
+  @apply .pl-6;
+  border-color: rgb(205, 205, 205);
+  outline: none;
+  height: 50px;
+}
+
+.right-none {
+  border-right: none;
+}
+
+.plane-block {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -9999px;
+  text-align: left;
+  letter-spacing: -1ex;
+  text-decoration: none;
+  padding: 0;
+
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 47%;
+  top: 25%;
+  background-color: white;
+  z-index: 10;
+}
+
+.plane-input {
+  background-image: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo--sprite.png?20180404);
+  background-position-x: -365px;
+  background-position-y: -117px;
+}
+
+.tablink {
+  font-size: 15px;
+}
+.tablink:after {
+  content: "";
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #c00;
+  border-right: none;
+}
+
+.button-find {
+  @apply .py-4;
+  @apply .px-8;
+  @apply .w-full;
+  color: config("colors.white");
+  background-color: config("colors.red");
+}
+
+.flight-container {
+  width: 42px;
+  height: 28px;
+  border-radius: 14px;
+  position: relative;
+  border: solid 1px;
+  border-color: rgb(205, 205, 205);
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+}
+.flight-in {
+  @apply .w-1/2;
+  @apply .block;
+  @apply .h-full;
+}
+
+.flight-in span {
+  content: "";
+  background: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo--sprite.png?20180528)
+    no-repeat -365px -65px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 24px;
+}
+
+.flight-in span.active {
+  background: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo--sprite.png?20180528)
+    no-repeat -365px -91px;
+}
+
+.flight-out {
+  @apply .w-1/2;
+  @apply .block;
+  @apply .h-full;
+}
+
+.flight-out span {
+  background: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo--sprite.png?20180528)
+    no-repeat -365px -143px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: -2px;
+}
+.flight-out span.active {
+  background: url(https://www.swiss.com/CMSContent/web/PublishingImages/icon/evo--sprite.png?20180528)
+    no-repeat -365px -195px;
+}
+
+.DateInput_input {
+  font-size: 0.875rem !important;
+  font-family: sans-serif !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: normal !important;
+  height: 50px !important;
+  @apply .input;
+}
+
+.DateRangePicker_1 {
+  width: 100%;
+}
+
+.DateRangePicker_1 .DateRangePickerInput_1 {
+  width: 100%;
+}
+
+.DateInput {
+  width: 98px !important;
+}
+
+@media (min-width: 768px) {
+  .DateInput {
+    width: 130px !important;
+  }
+}
