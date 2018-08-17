@@ -1,5 +1,6 @@
 ### Everymundo booking practical exercise
 
+![preview](https://raw.githubusercontent.com/devrchancay/everymundo-booking-practical-exercise/master/captura.png)
 
-Ramon Chancay
-ramon.chancay@gmail.com
+
+Ramón Chancay - [@devrchancay](https://twitter.com/devrchancay)
